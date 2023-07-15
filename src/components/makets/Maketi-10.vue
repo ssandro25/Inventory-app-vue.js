@@ -158,6 +158,13 @@
             <button type="button" class="btn btn-success w-100">ADD</button>
         </div>
 
+        <div>
+            <p class="fs-1">TEST!!!!!</p>
+            <select class="form-select">
+                <option v-for="item in test" :key="item" :value="item.ghonisdzieba_id">{{ item.ghonisdzieba_name }}</option>
+            </select>
+        </div>
+
         <table class="table mt-5">
             <thead>
             <tr>
@@ -210,6 +217,32 @@ export default {
             xnovaneba_weli: '',
             simagle: '',
             diametri: '',
+            test: [
+                {ghonisdzieba_name: 'თანდათანობითი ორ ჯერიანი ჭრა', ghonisdzieba_id: '5'},
+                {ghonisdzieba_name: 'ჯგუფურ-ამორჩვეითი ჭრა', ghonisdzieba_id: '7'},
+                {ghonisdzieba_name: 'ნებით-ამორჩევითი ჭრა', ghonisdzieba_id: '8'},
+                {ghonisdzieba_name: 'დაავადებული ხეების ჭრა', ghonisdzieba_id: '11'},
+                {ghonisdzieba_name: 'რეკონსტრუქციული პირწმინდა ჭრა ', ghonisdzieba_id: '12'},
+                {ghonisdzieba_name: 'რეკონსტრუქციული ნაწილობრივი ჭრა', ghonisdzieba_id: '13'},
+                {ghonisdzieba_name: 'სპეციალური ჭრა ამორჩევით', ghonisdzieba_id: '14'},
+                {ghonisdzieba_name: 'მარადმწვანე ქვეტყის ჭრა ზოლებად', ghonisdzieba_id: '15'},
+                {ghonisdzieba_name: 'სანიტარილი ჭრა', ghonisdzieba_id: '16'},
+                {ghonisdzieba_name: 'ჩახერგილობის გაწმენდა', ghonisdzieba_id: '17'},
+                {ghonisdzieba_name: 'ზეხმელის ჭრა', ghonisdzieba_id: '18'},
+                {ghonisdzieba_name: 'სპეციალური პირწმინდა ჭრა', ghonisdzieba_id: '19'},
+                {ghonisdzieba_name: 'განათებითი ჭრა', ghonisdzieba_id: '20'},
+                {ghonisdzieba_name: 'გაწმენდითი ჭრა', ghonisdzieba_id: '25'},
+                {ghonisdzieba_name: 'გამოხშირვითი ჭრა', ghonisdzieba_id: '30'},
+                {ghonisdzieba_name: 'გავლითი ჭრა', ghonisdzieba_id: '35'},
+                {ghonisdzieba_name: 'ერთეული ხეების ჭრა', ghonisdzieba_id: '36'},
+                {ghonisdzieba_name: 'ტყის კულტურები ღია ფართობზე', ghonisdzieba_id: '50'},
+                {ghonisdzieba_name: 'ტყის კულტურების რეკონსტრუქცია', ghonisdzieba_id: '51'},
+                {ghonisdzieba_name: 'მინერალიზაცია ნიადაგის', ghonisdzieba_id: '55'},
+                {ghonisdzieba_name: 'ბუნებრივი განახლების ხელისშეწყობა აჩიჩქვნა', ghonisdzieba_id: '56'},
+                {ghonisdzieba_name: 'ტყის კულტურების მოვლა', ghonisdzieba_id: '57'},
+                {ghonisdzieba_name: 'ბუნებრივი განახლების ხელისშეწყობა შეღობვა', ghonisdzieba_id: '60'},
+                {ghonisdzieba_name: 'ტყის კულტურების დამატება', ghonisdzieba_id: '64'}
+            ]
         }
     }
 }
