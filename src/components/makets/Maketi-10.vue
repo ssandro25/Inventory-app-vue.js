@@ -3,7 +3,7 @@
         <div class="col-lg-9">
             <label class="form-label text-truncate w-100" for="tier">10.1 იარუსი</label>
 
-            <select class="form-select" id="tier" v-model="iarusi">
+            <select class="form-select" id="tier">
                 <option selected>იარუსი</option>
                 <option>1 - კორომის პირველი იარუსი</option>
                 <option>2 - კორომის მეორე იარუსი</option>
@@ -23,7 +23,7 @@
         <div class="col-lg-3 col-6 mt-lg-0 mt-3">
             <label class="form-label text-truncate w-100" for="frequency">10.2 სიხშირე</label>
 
-            <select class="form-select" id="frequency" v-model="sixshire">
+            <select class="form-select" id="frequency">
                 <option selected>სიხშირე</option>
                 <option>01</option>
                 <option>02</option>
@@ -41,13 +41,13 @@
         <div class="col-lg-1 col-6 mt-3">
             <label class="form-label text-truncate w-100" for="coefficient">კოეფ.</label>
 
-            <input type="number" class="form-control" id="coefficient" v-model="koeficienti"/>
+            <input type="number" class="form-control" id="coefficient"/>
         </div>
 
         <div class="col-lg-2 col-6 mt-3">
             <label class="form-label text-truncate w-100" for="type">სახეობა</label>
 
-            <select class="form-select" id="type" v-model='saxeoba'>
+            <select class="form-select" id="type">
                 <option selected>სახეობა #1</option>
                 <option>ნძ</option>
                 <option>სჭ</option>
@@ -90,7 +90,7 @@
         <div class="col-lg-1 col-md-4 col-6 mt-3">
             <label class="form-label text-truncate w-100" for="aw">A წ</label>
 
-            <select class="form-select" id="aw" v-model="xnovaneba_weli">
+            <select class="form-select" id="aw">
                 <option selected>5</option>
                 <option>10</option>
                 <option>15</option>
@@ -101,7 +101,7 @@
         <div class="col-lg-1 col-md-4 col-6 mt-3">
             <label class="form-label text-truncate w-100" for="hm">H მ</label>
 
-            <select class="form-select" id="hm" v-model="simagle">
+            <select class="form-select" id="hm">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -113,7 +113,7 @@
         <div class="col-lg-1 col-md-4 col-6 mt-3">
             <label class="form-label text-truncate w-100" for="dsm">D სმ</label>
 
-            <select class="form-select" id="dsm" v-model="diametri">
+            <select class="form-select" id="dsm">
                 <option>8</option>
                 <option>10</option>
                 <option>12</option>
@@ -158,14 +158,7 @@
             <button type="button" class="btn btn-success w-100">ADD</button>
         </div>
 
-        <div>
-            <p class="fs-1">TEST!!!!!</p>
-            <select class="form-select">
-                <option v-for="item in test" :key="item" :value="item.ghonisdzieba_id">{{ item.ghonisdzieba_name }}</option>
-            </select>
-        </div>
-
-        <table class="table mt-5">
+        <table class="table mt-5 fs-12">
             <thead>
             <tr>
                 <th>იარუსი</th>
@@ -185,13 +178,13 @@
             </thead>
             <tbody>
             <tr>
-                <td>{{ iarusi }}</td>
-                <td>{{ sixshire }}</td>
-                <td>{{ koeficienti }}</td>
-                <td>{{ saxeoba }}</td>
-                <td>{{ xnovaneba_weli }}</td>
-                <td>{{ simagle }}</td>
-                <td>{{ diametri }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -201,49 +194,27 @@
             </tr>
             </tbody>
         </table>
+
+        <div>
+            {{ dakanebisName }}
+        </div>
     </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
     name: 'Maketi-10',
 
+    computed: {
+        ...mapGetters([
+            'dakanebisName'
+        ])
+    },
+
     data() {
-        return {
-            iarusi: '',
-            sixshire: '',
-            koeficienti: '',
-            saxeoba: '',
-            xnovaneba_weli: '',
-            simagle: '',
-            diametri: '',
-            test: [
-                {ghonisdzieba_name: 'თანდათანობითი ორ ჯერიანი ჭრა', ghonisdzieba_id: '5'},
-                {ghonisdzieba_name: 'ჯგუფურ-ამორჩვეითი ჭრა', ghonisdzieba_id: '7'},
-                {ghonisdzieba_name: 'ნებით-ამორჩევითი ჭრა', ghonisdzieba_id: '8'},
-                {ghonisdzieba_name: 'დაავადებული ხეების ჭრა', ghonisdzieba_id: '11'},
-                {ghonisdzieba_name: 'რეკონსტრუქციული პირწმინდა ჭრა ', ghonisdzieba_id: '12'},
-                {ghonisdzieba_name: 'რეკონსტრუქციული ნაწილობრივი ჭრა', ghonisdzieba_id: '13'},
-                {ghonisdzieba_name: 'სპეციალური ჭრა ამორჩევით', ghonisdzieba_id: '14'},
-                {ghonisdzieba_name: 'მარადმწვანე ქვეტყის ჭრა ზოლებად', ghonisdzieba_id: '15'},
-                {ghonisdzieba_name: 'სანიტარილი ჭრა', ghonisdzieba_id: '16'},
-                {ghonisdzieba_name: 'ჩახერგილობის გაწმენდა', ghonisdzieba_id: '17'},
-                {ghonisdzieba_name: 'ზეხმელის ჭრა', ghonisdzieba_id: '18'},
-                {ghonisdzieba_name: 'სპეციალური პირწმინდა ჭრა', ghonisdzieba_id: '19'},
-                {ghonisdzieba_name: 'განათებითი ჭრა', ghonisdzieba_id: '20'},
-                {ghonisdzieba_name: 'გაწმენდითი ჭრა', ghonisdzieba_id: '25'},
-                {ghonisdzieba_name: 'გამოხშირვითი ჭრა', ghonisdzieba_id: '30'},
-                {ghonisdzieba_name: 'გავლითი ჭრა', ghonisdzieba_id: '35'},
-                {ghonisdzieba_name: 'ერთეული ხეების ჭრა', ghonisdzieba_id: '36'},
-                {ghonisdzieba_name: 'ტყის კულტურები ღია ფართობზე', ghonisdzieba_id: '50'},
-                {ghonisdzieba_name: 'ტყის კულტურების რეკონსტრუქცია', ghonisdzieba_id: '51'},
-                {ghonisdzieba_name: 'მინერალიზაცია ნიადაგის', ghonisdzieba_id: '55'},
-                {ghonisdzieba_name: 'ბუნებრივი განახლების ხელისშეწყობა აჩიჩქვნა', ghonisdzieba_id: '56'},
-                {ghonisdzieba_name: 'ტყის კულტურების მოვლა', ghonisdzieba_id: '57'},
-                {ghonisdzieba_name: 'ბუნებრივი განახლების ხელისშეწყობა შეღობვა', ghonisdzieba_id: '60'},
-                {ghonisdzieba_name: 'ტყის კულტურების დამატება', ghonisdzieba_id: '64'}
-            ]
-        }
+        return {}
     }
 }
 </script>

@@ -57,7 +57,7 @@
         <div class="col-md-3 mt-3">
             <label class="form-label text-truncate w-100" for="slope">1.5 დაქანება</label>
 
-            <select class="form-select" id="slope" :disabled="empty_layout_one">
+            <select v-model="selectedItem.id" @change="updateSelectedItem" class="form-select" id="slope" :disabled="empty_layout_one">
                 <option selected>აირჩიეთ</option>
                 <option v-for="item in dakaneba" :key="item" :value="item.id">{{item.name}}</option>
             </select>
@@ -94,7 +94,8 @@
 
         <div class="col-md-3 mt-3">
             <label class="form-label text-truncate w-100" for="erosion_degree">1.8 ეროზიის
-                ხარისხი</label>
+                ხარისხი
+            </label>
 
             <select class="form-select" id="erosion_degree" :disabled="empty_layout_one">
                 <option selected>ეროზიის სახე</option>
@@ -107,6 +108,8 @@
 
             <input type="number" class="form-control" id="area" :disabled="empty_layout_one"/>
         </div>
+
+        <div>{{ selectedItem.name }}</div>
 
     </div>
 </div>
@@ -130,9 +133,18 @@ export default {
         ]),
     },
 
+    methods: {
+        updateSelectedItem() {
+            const selectedItem = this.dakaneba.find(item => item.id === this.selectedItem.id);
+            this.selectedItem.name = selectedItem ? selectedItem.name : null;
+            this.$store.commit('setDakanebisName', selectedItem.name)
+        },
+    },
+
     data() {
         return {
-            empty_layout_one: false
+            empty_layout_one: false,
+            selectedItem: { id: null, name: null },
         }
     },
 

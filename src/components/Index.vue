@@ -323,7 +323,7 @@
                 </h2>
                 <div id="panel-twelve" class="accordion-collapse collapse" aria-labelledby="twelve">
                     <div class="accordion-body p-lg-3 p-0">
-                        <Maketi1/>
+                        <Maketi11/>
                     </div>
                 </div>
             </div>
@@ -337,200 +337,7 @@
                 </h2>
                 <div id="panel-thirteen" class="accordion-collapse collapse" aria-labelledby="thirteen">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row m-0">
-                            <div class="col-lg-3 col-6">
-                                <label class="form-label text-truncate w-100" for="grove_damage_types">
-                                    კორომის დაზიანების ტიპები
-                                </label>
-
-                                <select class="form-select" id="grove_damage_types">
-                                    <option selected></option>
-                                    <option value="1">1 - დაბლითი ხანძარი </option>
-                                    <option value="2">2 - მაღლივი ხანძარი</option>
-                                    <option value="3">3 - ქარქცევული</option>
-                                    <option value="4">4 -  თოვლტეხილი</option>
-                                    <option value="5">5 - დაჭაობება</option>
-                                    <option value="6">6 - გვალვა</option>
-                                    <option value="7">7 - ფესვის ყელის მოწვა</option>
-                                    <option value="8">8 - მოყინვა</option>
-                                    <option value="9">9 - ტყის დაავადებები</option>
-                                    <option value="10">10 - ენტომავნებლები</option>
-                                    <option value="11">11 - გარეული ცხოველები</option>
-                                    <option value="12">12 - შინაური ცხოველები</option>
-                                    <option value="13">13 - მექანიკური დაზიანება</option>
-                                    <option value="14">14 - საწარმო გამონაბოლქვი</option>
-                                    <option value="15">15 - აგროტექნიკის დარღვევა</option>
-                                    <option value="16">16 - ბზის სიდამწვრე </option>
-                                    <option value="17">17 - რეზერვი</option>
-                                    <option value="18">18 - რეზერვი</option>
-                                    <option value="19">19 - ეკოლოგიური დარღვევები</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-6">
-                                <label class="form-label text-truncate w-100" for="injury_year">
-                                    დაზიანების წელი
-                                </label>
-
-                                <input type="number" class="form-control" id="injury_year">
-                            </div>
-
-                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="damaged_woody_type">
-                                    დაზიანებული მერქნიანი სახეობა
-                                </label>
-
-                                <select class="form-select" id="damaged_woody_type">
-                                    <option selected></option>
-                                    <option value="1">1 - ნაძვი</option>
-                                    <option value="2">2 - სოჭი</option>
-                                    <option value="3">3 - ფიჭვი</option>
-                                    <option value="4">4 - წიფელი</option>
-                                    <option value="5">5 - წიფელი (ა)</option>
-                                    <option value="6">6 - რცხილა</option>
-                                    <option value="7">7 - რცხილა (ა)</option>
-                                    <option value="8">8 - მუხა</option>
-                                    <option value="9">9 - მუხა (ა)</option>
-                                    <option value="10">10 - იფანი</option>
-                                    <option value="11">11 - ნეკერჩხალი</option>
-                                    <option value="12">12 - ნეკერჩხალი (ა)</option>
-                                    <option value="13">13 - წაბლი</option>
-                                    <option value="14">14 - წაბლი (ა)</option>
-                                    <option value="15">15 - აკაცია</option>
-                                    <option value="16">16 - აკაცია (ა)</option>
-                                    <option value="17">17 - ჯაგრცხილა</option>
-                                    <option value="18">18 - ვერხვი</option>
-                                    <option value="19">19 - თელა</option>
-                                    <option value="20">20 - თხმელა</option>
-                                    <option value="21">21 - თხმელა (ა)</option>
-                                    <option value="22">22 - ცაცხვი</option>
-                                    <option value="23">23 - კაკალის ხე</option>
-                                    <option value="24">24 - პანტა</option>
-                                    <option value="25">25 - მაჟალო</option>
-                                    <option value="26">26 - კრიპტომერია</option>
-                                    <option value="27">27 - ევკალიპტი</option>
-                                    <option value="28">28 - ტიტას ხე</option>
-                                    <option value="29">29 - აილანთუსი</option>
-                                    <option value="30">30 - არყი</option>
-                                    <option value="31">31 - ტირიფი</option>
-                                    <option value="32">32 - თხილი</option>
-                                    <option value="33">33 - წყავი</option>
-                                    <option value="34">34 - შქერი, ჭყორი</option>
-                                    <option value="35">35 - ბამბუკი</option>
-
-
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="pest_disease_type">
-                                    მავნებლისა და დაავადების სახეობა
-                                </label>
-
-                                <select class="form-select" id="pest_disease_type">
-                                    <option selected></option>
-                                    <option value="1">1 - ფიჭვის მზომელა</option>
-                                    <option value="2">2 - ფიჭვის პარკხვევია</option>
-                                    <option value="3">3 - ფიჭვის ჩვეულებრივი ხერხია</option>
-                                    <option value="4">4 - ფიჭვის ქარცი ხერხია</option>
-                                    <option value="5">5 - ნაძვის დიდი ლაფანჭამია</option>
-                                    <option value="6">6 - ექვსკბილა ქერქიჭამია</option>
-                                    <option value="7">7 - ქერქიჭამია ტიპოგრაფი</option>
-                                    <option value="8">8 - ფიჭვის დიდი ლაფნიჭამია (მებაღე)</option>
-                                    <option value="9">9 - ფიჭვის პატარა ლაფნიჭამია (პატარა მებაღე)</option>
-                                    <option value="10">10 - კენწეროს ქერქიჭამია</option>
-                                    <option value="11">11 - ორკბილა ქერქიჭამია</option>
-                                    <option value="12">12 - ოთხკბილა ქერქიჭამია</option>
-                                    <option value="13">13 - ნაძვის კრიფალი</option>
-                                    <option value="14">14 - აღმოსავლეთის კაუჭ-კბილა ქერქიჭამია</option>
-                                    <option value="15">15 - ზოლიანი მემერქნია</option>
-                                    <option value="16">16 - ნაძვის დიდი შავი ხარაბუზა</option>
-                                    <option value="17">17 - ნაძვის მკერდმქრალა ხარაბუზა</option>
-                                    <option value="18">18 - ნაძვის პატარა შავი ხარაბუზა</option>
-                                    <option value="19">19 - ფიჭვის შავი ხარაბუზა</option>
-                                    <option value="20">20 - ლურჯი პეწიანა</option>
-                                    <option value="21">23 - ფიჭვის ლურჯი ბოლორქიანა</option>
-                                    <option value="22">24 - კავკასიის დიდი ბოლორქიანა</option>
-                                    <option value="23">26 - წიწვების სიყვითლე და ხმობა (შუტე)</option>
-                                    <option value="24">27 - თოვლის სოკო (ფაციდიოზი)</option>
-                                    <option value="25">28 - ფიჭვის ჯანგა (მელამფსორა)</option>
-                                    <option value="26">29 - ნაძვის ტოტების ხმობა</option>
-                                    <option value="27">30 - ცქვლეფია მზომელა</option>
-                                    <option value="28">31 - ზამთრის მზომელა</option>
-                                    <option value="29">32 - ოქროკუდა</option>
-                                    <option value="30">33 - არაფარდი პარკხვევია</option>
-                                    <option value="31">34 - რგოლური პარკხვევია</option>
-                                    <option value="32">35 - კუნელის თეთრულა</option>
-                                    <option value="33">36 - ტირიფის ტალღურა</option>
-                                    <option value="34">37 - მუხის ფოთოლმხვევია</option>
-                                    <option value="35">38 - თელის ფოთლიჭამია</option>
-                                    <option value="36">39 - მუხის ფოთლის რწყილი</option>
-                                    <option value="37">40 - მურყნის ფოთოლჭამია</option>
-                                    <option value="38">41 - მუხის ცხვირგრძელა</option>
-                                    <option value="39">42 - მუხის ერთფეროვანი ჩრჩილი</option>
-                                    <option value="40">43 - ბუგრები</option>
-                                    <option value="41">44 - ცილაჭამიები</option>
-                                    <option value="42">45 - ლაფნჭამიები</option>
-                                    <option value="43">48 - ხერხიები</option>
-                                    <option value="44">49 - ხარაბუზები</option>
-                                    <option value="45">50 - პეწიანები</option>
-                                    <option value="46">51 - მინაფრთიანები</option>
-                                    <option value="47">52 - პაუტიანობა</option>
-                                    <option value="48">53 - თელის ჰოლანდიური დაავადება (გრაფიოზი)</option>
-                                    <option value="49">46 - წაბლის კიბო (ენდოტეოზი)</option>
-                                    <option value="50">47 - მუხის ტრახეომიკოზული დაავადება</option>
-                                    <option value="51">54 - ფოთლების შავი სილაქავე</option>
-                                    <option value="52">55 - კაკლის მურა სილაქავე (მარსონიოზი)</option>
-                                    <option value="53">56 - აბედა სოკოები</option>
-                                    <option value="54">57 - მუხის ნაცარი</option>
-                                    <option value="55">58 - ფოთლების ჭკნობა გამოწვეული ბაქტერიული დაავადებებით</option>
-                                    <option value="56">59 - ნეკერჩხლის მუხისებური დაავადება</option>
-                                    <option value="57">60 - მუხის სიდამწვრე</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col-lg-4 col-6 mt-3">
-                                <label class="form-label text-truncate w-100" for="damage_degree">
-                                    დაზიანების ხარისხი
-                                </label>
-
-                                <select class="form-select" id="damage_degree">
-                                    <option selected></option>
-                                    <option value="1">1 - სუსტი (დაზ.10%)</option>
-                                    <option value="2">2 - საშუალო (დაზ.11-30%)</option>
-                                    <option value="3">3 - ძლიერი (31% და მეტი)</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col-lg-4 col-6 mt-3">
-                                <label class="form-label text-truncate w-100" for="pest_disease_type_two">
-                                    მავნებლისა და დაავადების სახეობა
-                                </label>
-
-                                <select class="form-select" id="pest_disease_type_two">
-                                    <option selected>1 - ფიჭვის მზომელა</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-4 col-6 mt-3">
-                                <label class="form-label text-truncate w-100" for="damage_degree_two">
-                                    დაზიანების ხარისხი
-                                </label>
-
-                                <select class="form-select" id="damage_degree_two">
-                                    <option selected>1 - სუსტი (დაზ.10%)</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
+                        <Maketi12/>
                     </div>
                 </div>
             </div>
@@ -544,105 +351,7 @@
                 </h2>
                 <div id="panel-fourteen" class="accordion-collapse collapse" aria-labelledby="fourteen">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-4 row-cols-2 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="track_width">
-                                    ტრასის სიგანე 0,1 მ სიზუსტით
-                                </label>
-
-                                <input type="number" class="form-control" id="track_width">
-                            </div>
-
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="track_length">
-                                    ტრასის სიგრძე
-                                </label>
-
-                                <input type="number" class="form-control" id="track_length">
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="condition">
-                                    მდგომარეობა(შეივსოს აუცილებლად)
-                                </label>
-
-                                <select class="form-select" id="condition">
-                                    <option selected></option>
-                                    <option value="1">61 - სუფთა</option>
-                                    <option value="2">62 - სუფთა მინერალიზირებული</option>
-                                    <option value="3">3 - 63 - დაფარულია მერქნიანი სახეობებით</option>
-                                    <option value="4">64 - დაფ.მინერ.</option>
-                                    <option value="5">65 - ჩაგერხილი</option>
-                                    <option value="6">66 - გავლა შეს.</option>
-                                    <option value="7">67 - გაუვალი</option>
-                                    <option value="8">68 - დამაკ.გზი.</option>
-                                    <option value="9">69 - არადამაკ.გზისთვის</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="road_destination">
-                                    გზის დანიშნულება
-                                </label>
-
-                                <select class="form-select" id="road_destination">
-                                    <option selected></option>
-                                    <option value="1">1 - სატყეო-სამ.</option>
-                                    <option value="2">2 - ტყესაზიდი</option>
-                                    <option value="3">3 - ხანძარსაწინააღმდეგო</option>
-                                    <option value="4">4 - საერთო გამოყენების</option>
-                                    <option value="5">5 - დამხმარე გზები</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="cover_type">
-                                    საფარის ტიპი
-                                </label>
-
-                                <select class="form-select" id="cover_type">
-                                    <option selected></option>
-                                    <option value="1">2 - ასფალტი</option>
-                                    <option value="2">3 - მოხრეშილი</option>
-                                    <option value="3">5 - დაფარ. ადგ. მასალით</option>
-                                    <option value="4">8 - მკვრივი გრუნტი</option>
-                                    <option value="5">9 - გრუნტის</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="carriageway_width">
-                                    გზის სავალი ნაწილის სიგანე 0,1 მ სიზუსტით
-                                </label>
-
-                                <input type="number" class="form-control" id="carriageway_width">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="seasonal_action">
-                                    სეზონური მოქმედება
-                                </label>
-
-                                <select class="form-select" id="seasonal_action">
-                                    <option selected></option>
-                                    <option value="1">2 - ზაფხ.</option>
-                                    <option value="2">4 - ზამთ.</option>
-                                    <option value="3">5 - მთელი წლის განმავ.</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="requires_measures">
-                                    საჭიროებს ღონისძიებებს (სიგრძე, სიზუსტით 1კმ-მდე)
-                                </label>
-
-                                <input type="number" class="form-control" id="requires_measures">
-                            </div>
-                        </div>
+                        <Maketi13/>
                     </div>
                 </div>
             </div>
@@ -656,110 +365,7 @@
                 </h2>
                 <div id="panel-fiveteen" class="accordion-collapse collapse" aria-labelledby="fiveteen">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-auto row-cols-2 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="accounting_category">
-                                    აღრიცხვის კატეგორია
-                                </label>
-
-                                <select class="form-select" id="accounting_category">
-                                    <option selected></option>
-                                    <option value="1">2 - სამკურნალო ნედლეური</option>
-                                    <option value="2">7 - კენკროვნები</option>
-                                    <option value="3">8 - სოკოები</option>
-                                    <option value="4">9 - იშვიათი მცენ.</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="plants_type">
-                                    მცენარეთა სახეობა
-                                </label>
-
-                                <select class="form-select" id="plants_type">
-                                    <option selected></option>
-                                    <option value="1">1 - მოცვი მაღალმთის</option>
-                                    <option value="2">2 - მოცვი შავი</option>
-                                    <option value="3">3 - მარწყვი</option>
-                                    <option value="4">4 - ხენდრო</option>
-                                    <option value="5">5 - ცხრატყავა (წერწა)</option>
-                                    <option value="6">6 - ასკილი</option>
-                                    <option value="7">7 - ჟოლო</option>
-                                    <option value="8">8 - მოცხარი წითელი</option>
-                                    <option value="9">9 - მოცხარი შავი</option>
-                                    <option value="10">10 - ჭნავი</option>
-                                    <option value="11">11 - ქაცვი</option>
-                                    <option value="12">12 - შოთხვი</option>
-                                    <option value="13">13 - მაყვალი</option>
-                                    <option value="14">14 - შინდი</option>
-                                    <option value="15">15 - რეზერვი</option>
-                                    <option value="16">16 - კატაბალახა</option>
-                                    <option value="17">17 - შოთხვი</option>
-                                    <option value="18">18 - კოთხუჯი</option>
-                                    <option value="19">19 - სამკურნალო ტუხტი</option>
-                                    <option value="20">20 - ბელადონა</option>
-                                    <option value="21">21 - წითელი კუნელი</option>
-                                    <option value="22">22 - უკვდავა</option>
-                                    <option value="23">23 - შროშანა</option>
-                                    <option value="24">24 - ყვითელი ცხვირისატეხელია</option>
-                                    <option value="25">25 - ქაცვი</option>
-                                    <option value="26">26 - კულმუხო</option>
-                                    <option value="27">27 - ვირის ტერფა</option>
-                                    <option value="28">28 - წითელი ფუტკარა</option>
-                                    <option value="29">29 - სამკურნალო გვირილა</option>
-                                    <option value="30">30 - რიხტერის მლაშოპურა</option>
-                                    <option value="31">31 - ასკილი</option>
-                                    <option value="32">32 - სამკურნალო სალბი</option>
-                                    <option value="33">32 - სამკურნალო სალბი</option>
-                                    <option value="34">33 - დათვის სოკო</option>
-                                    <option value="35">34 - დუმა სოკო</option>
-                                    <option value="36">35 - მჭადა სოკო</option>
-                                    <option value="37">36 - წითლიო</option>
-                                    <option value="38">37 - მიქლიო</option>
-                                    <option value="39">38 - მანჭკვალას მატყუარა</option>
-                                    <option value="40">39 - ქამა სოკო</option>
-                                    <option value="41">40 - მანჭკვალა</option>
-                                    <option value="42">41 - მერცხალა სოკო</option>
-                                    <option value="43">42 - ნიყვი</option>
-                                    <option value="44">43 - ხარისფაშვა</option>
-                                    <option value="45">44 - გუდაფშუკა</option>
-                                    <option value="46">45 - შხამა სოკო</option>
-                                    <option value="47">46 - ხეთა მხალი</option>
-                                    <option value="48">47 - ირემა სოკო</option>
-                                    <option value="49">48 - წითელშხამა</option>
-                                    <option value="50">49 - ვარსკვლავა სოკო</option>
-                                    <option value="51">50 - ყვითელი საჩეჩელა</option>
-                                    <option value="52">51 - ჩიტიბუდა</option>
-                                    <option value="53">52 - რეზერვი</option>
-                                    <option value="54">53 - რეზერვი</option>
-                                    <option value="55">54 - რეზერვი</option>
-                                    <option value="56">55 - რეზერვი</option>
-                                    <option value="57">56 - წივანა</option>
-                                    <option value="57">57 - ანჩხლი</option>
-                                    <option value="57">58 - ჩადუნა</option>
-                                    <option value="57">59 - გვიმრა</option>
-                                    <option value="57">60 - შავი გვიმრა</option>
-                                    <option value="57">61 - ისლი</option>
-                                    <option value="57">62 - მოლოზანა</option>
-                                    <option value="57">63 - ხავსი</option>
-                                    <option value="57">64 - მჟაველა</option>
-                                    <option value="57">65 - ქრისტესბეჭედა</option>
-                                    <option value="57">66 - ხარისთვალა</option>
-                                    <option value="57">67 - ნაღველა</option>
-                                    <option value="57">68 - ბრძამი</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="coverage_percent">
-                                    დაფარვის %
-                                </label>
-
-                                <input type="number" class="form-control" id="coverage_percent">
-                            </div>
-                        </div>
+                        <Maketi14/>
                     </div>
                 </div>
             </div>
@@ -2184,11 +1790,19 @@ import Maketi2 from "@/components/makets/Maketi-2.vue";
 import Maketi3 from "@/components/makets/Maketi-3.vue";
 import Maketi4 from "@/components/makets/Maketi-4.vue";
 import Maketi10 from "@/components/makets/Maketi-10.vue";
+import Maketi11 from "@/components/makets/Maketi-11.vue";
+import Maketi12 from "@/components/makets/Maketi-12.vue";
+import Maketi13 from "@/components/makets/Maketi-13.vue";
+import Maketi14 from "@/components/makets/Maketi-14.vue";
 
 export default {
     name: 'IndexInvAPP',
 
     components: {
+        Maketi14,
+        Maketi13,
+        Maketi12,
+        Maketi11,
         Maketi10,
         Maketi4,
         Maketi3,
@@ -2199,16 +1813,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*:focus {
-    box-shadow: unset !important;
-}
-
 .accordion-button  {
     background-color: #033D24;
     color: #fff;

@@ -154,5 +154,7 @@ export default {
         {id: '1', name: '1 - სუსტი'},
         {id: '2', name: '2 - საშუალო'},
         {id: '3', name: '3 - ძლიერი'},
-    ]
+    ],
+
+    dakanebisName:  null
 }
