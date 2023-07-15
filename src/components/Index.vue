@@ -379,160 +379,7 @@
                 </h2>
                 <div id="panel-sixteen" class="accordion-collapse collapse" aria-labelledby="sixteen">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-4 row-cols-2 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="event_code">
-                                    ღონისძიების შიფრი
-                                </label>
-
-                                <select class="form-select" id="event_code">
-                                    <option selected></option>
-                                    <option value="1">1 - პირწმინდა ჭრა</option>
-                                    <option value="2">5 - თანდათანობითი ორ ჯერიანი ჭრა</option>
-                                    <option value="3">7 - ჯგუფურ-ამორჩვეითი ჭრა</option>
-                                    <option value="4">8 - ნებით-ამორჩევითი ჭრა</option>
-                                    <option value="5">11 - დაავადებული ხეების ჭრა</option>
-                                    <option value="6">12 - რეკონსტრუქციული პირწმინდა ჭრა</option>
-                                    <option value="7">13 - რეკონსტრუქციული ნაწილობრივი ჭრა</option>
-                                    <option value="8">14 - სპეციალური ჭრა ამორჩევით</option>
-                                    <option value="9">15 - მარადმწვანე ქვეტყის ჭრა ზოლებად</option>
-                                    <option value="10">16 - სანიტარილი ჭრა</option>
-                                    <option value="11">17 - ჩახერგილობის გაწმენდა</option>
-                                    <option value="12">18 - ზეხმელის ჭრა</option>
-                                    <option value="13">19 - სპეციალური პირწმინდა ჭრა</option>
-                                    <option value="14">20 - განათებითი ჭრა</option>
-                                    <option value="15">25 - გაწმენდითი ჭრა</option>
-                                    <option value="16">30 - გამოხშირვითი ჭრა</option>
-                                    <option value="17">35 - გავლითი ჭრა</option>
-                                    <option value="18">36 - ერთეული ხეების ჭრა</option>
-                                    <option value="19">50 - ტყის კულტურები ღია ფართობზე</option>
-                                    <option value="20">51 - ტყის კულტურების რეკონსტრუქცია</option>
-                                    <option value="21">55 - მინერალიზაცია ნიადაგის</option>
-                                    <option value="22">56 - ბუნებრივი განახლების ხელისშეწყობა აჩიჩქვნა</option>
-                                    <option value="23">57 - ტყის კულტურების მოვლა</option>
-                                    <option value="24">60 - ბუნებრივი განახლების ხელისშეწყობა შეღობვა</option>
-                                    <option value="25">64 - ტყის კულტურების დამატება</option>
-                                    <option value="26">65 - ბუნებრივი განახლება - გაწმენდა, შერგვა/შეთესვა</option>
-                                    <option value="27">66 - სანერგეების მოწყობა 67 - პლანტაციების მოწყობა</option>
-                                    <option value="28">74 - ბაქნებად ნიადაგის დამუშავება</option>
-                                    <option value="29">75 - საქონლის ძოვება</option>
-                                    <option value="30">82 - ბუჩქნარების მოჭრა სათიბებზე</option>
-                                    <option value="31">86 - ძირეული გაუმჯობესება სათიბების</option>
-                                    <option value="32">87 - ზედაპირული გაუმჯობესება სათიბების</option>
-                                    <option value="33">91 - სირონების გაჭრა 92 - სირონების გაწმენდა</option>
-                                    <option value="34">94 - ანშლანგების დაყენება 95 - შეკეთება</option>
-                                    <option value="35">96 - კაპიტალური შეკეთება</option>
-                                    <option value="36">97 - დასასვენებელი ადგილების მოწყობა</option>
-                                    <option value="37">106 - ტურისტული თავშეყრის ადგილების მოწყობა</option>
-                                    <option value="38">107 - პარკირების ადგილების მოწყობა</option>
-                                    <option value="39">121 - გზების შეკეთება</option>
-                                    <option value="40">130 - სამკურნალო ნედლეულის დამზადება</option>
-                                    <option value="41">134 - კენკროვნების დამზადება</option>
-                                    <option value="42">140 - ძოვება აკრძალულია</option>
-                                    <option value="43">141 - გათიბვა აკრძალულია</option>
-                                    <option value="44">144 - მელიორაცია</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="events_year">
-                                    ღონისძიებების ჩატარების წელი
-                                </label>
-
-                                <input type="number" class="form-control" id="events_year">
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="woody_type">
-                                    მერქნიანი სახეობა
-                                </label>
-
-                                <select class="form-select" id="woody_type">
-                                    <option selected></option>
-                                    <option value="1">1 - ერთი</option>
-                                    <option value="2">2 - ორი</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="stock_m3ha">
-                                    მარაგი მ3/ჰა-ზე
-                                </label>
-
-                                <input type="number" class="form-control" id="stock_m3ha">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="performance_analysis">
-                                    შესრულების ანალიზი
-                                </label>
-
-                                <select class="form-select" id="performance_analysis">
-                                    <option selected></option>
-                                    <option value="1">1 - დაპრ. და ჩატ.დასაბუთ.</option>
-                                    <option value="2">2 - დაუსაბუთ.</option>
-                                    <option value="3">3 - დაპრ. არ ჩატ.დასაბუთ.</option>
-                                    <option value="4">4 - არ დაპრ.ჩატ.დასაბუთ.</option>
-                                    <option value="5">5 - დასაბუთ.</option>
-                                    <option value="6">6 - დაუსაბუთებ.</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="rate">
-                                    შეფასება
-                                </label>
-
-                                <select class="form-select" id="rate">
-                                    <option selected></option>
-                                    <option value="1">2 - არადამაკმაყოფილებელია</option>
-                                    <option value="2">3 - დამაკმაყოფილებელია</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="unsatisfactory_reasons">
-                                    არადამაკმაყოფილებების შესრულების მიზეზები
-                                </label>
-
-                                <select class="form-select" id="unsatisfactory_reasons">
-                                    <option selected></option>
-                                    <option value="1">30 - არასაკმარისი ინტენსივობა</option>
-                                    <option value="2">31 - გადაჭარბებული ინტენსივობა</option>
-                                    <option value="3">32 - საუკეთესო ეგზემპლიარების მოჭრა</option>
-                                    <option value="4">33 - უვარგისი ეგზემპლიარების დატოვება</option>
-                                    <option value="5">34 - კორომი დეგრადირებულია</option>
-                                    <option value="6">35 - ჩატარებულია უბნის ნაწილზე</option>
-                                    <option value="7">36 - მოზარდის დაზიანება</option>
-                                    <option value="8">37 - ტყესაკაფის უხარისხო გაწმენდა</option>
-                                    <option value="9">38 - ჭრის წესის დარღვევა</option>
-                                    <option value="10">39 - შუახნოვანი და მომწიფარი ხეების მოჭრა</option>
-                                    <option value="11">40 - რეზერვი</option>
-                                    <option value="12">41 - რეზერვი</option>
-                                    <option value="13">42 - რეზერვი</option>
-                                    <option value="14">43 - რეზერვი</option>
-                                    <option value="15">44 - რეზერვი</option>
-                                    <option value="16">45 - რეზერვი</option>
-                                    <option value="17">46 - რეზერვი</option>
-                                    <option value="18">47 - რეზერვი</option>
-                                    <option value="19">48 - რეზერვი</option>
-                                    <option value="20">49 - რეზერვი</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="area_ha">
-                                    ფართობი, ჰა
-                                </label>
-
-                                <input type="number" class="form-control" id="area_ha">
-                            </div>
-                        </div>
+                        <Maketi15/>
                     </div>
                 </div>
             </div>
@@ -546,92 +393,7 @@
                 </h2>
                 <div id="panel-seventeen" class="accordion-collapse collapse" aria-labelledby="seventeen">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-4 row-cols-2 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="raw_material_category">
-                                    ნედლეულის კატეგორია
-                                </label>
-
-                                <select class="form-select" id="raw_material_category">
-                                    <option selected></option>
-                                    <option value="1">6 - ქერქი</option>
-                                    <option value="2">10 - ფესვები</option>
-                                    <option value="3">12 - ფოთლები</option>
-                                    <option value="4">15 - კაკალი</option>
-                                    <option value="5">18 - ნაყოფი</option>
-                                    <option value="6">24 - ნეკერი</option>
-                                    <option value="7">26 - ყვავილები</option>
-                                    <option value="8">28 - კენკროვანი</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="woody_species">
-                                    მერქნიანი სახეობა
-                                </label>
-
-                                <select class="form-select" id="woody_species">
-                                    <option selected></option>
-                                    <option value="1">1 - ერთი</option>
-                                    <option value="2">2 - ორი</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="abundance_year">
-                                    ხნოვანება, წელი
-                                </label>
-
-                                <input type="number" class="form-control" id="abundance_year">
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="height">
-                                    სიმაღლე, 0,1მ სიზუსტით
-                                </label>
-
-                                <input type="number" class="form-control" id="height">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="measurement_units">
-                                    ზომის ერთეული
-                                </label>
-
-                                <select class="form-select" id="measurement_units">
-                                    <option selected></option>
-                                    <option value="1">1 - კგ</option>
-                                    <option value="2">2 - ტ</option>
-                                    <option value="3">3 - მ3</option>
-
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="yield_per">
-                                    მოსავლიანობა 1 ჰა-ზე სიზუსტით 0,1-მდე
-                                </label>
-
-                                <input type="number" class="form-control" id="yield_per">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="collection_accessible">
-                                    მისადგომი შეგროვებისათვის
-                                </label>
-
-                                <select class="form-select" id="collection_accessible">
-                                    <option selected></option>
-                                    <option value="1">1 - მიწიდან</option>
-                                    <option value="2">2 - მექ.მოწყობ. და ხმარ.</option>
-                                    <option value="3">3 - სპეც.მოწყ.დახმარებ.</option>
-
-                                </select>
-                            </div>
-
-                        </div>
+                        <Maketi16/>
                     </div>
                 </div>
             </div>
@@ -659,59 +421,7 @@
                 </h2>
                 <div id="panel-nineteen" class="accordion-collapse collapse" aria-labelledby="nineteen">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="chaobis_tipi">
-                                    19.1. ჭაობის ტიპი
-                                </label>
-
-                                <select class="form-select" id="chaobis_tipi">
-                                    <option value="1">1- დაბლობის</option>
-                                    <option value="2">2- მაღლობის</option>
-                                    <option value="3">3- გარდამავალი</option>
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="tke_mcenareulobis_tipi">
-                                    19.2. ტყე-მცენარეულობის ტიპი
-                                </label>
-
-                                <select class="form-select" id="tke_mcenareulobis_tipi">
-                                    <option value="1">1- ისლიანი</option>
-                                    <option value="2">2- ღეღიანი</option>
-                                    <option value="3">3- ისლ-ღეღიანი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-md-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="torfiani_fenis_simkrive">
-                                    19.3. ტორფიანი ფენის სიმკრივე
-                                </label>
-
-                                <input type="number" class="form-control" step="0.1" min="0.1" max="9.9" id="torfiani_fenis_simkrive">
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="merkniani_saxeoba">
-                                    19.4. მერქნიანი სახეობა (თუ ჭაობი დაბურულია - ძირ.შიფრ.ცხრლ)
-                                </label>
-
-                                <select class="form-select" id="merkniani_saxeoba">
-                                    <option value="1">1- Fagus</option>
-                                    <option value="2">2- Carpinus</option>
-                                    <option value="3">3- Quercus</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="daburulobis_procenti">
-                                    19.5. დაბურულობის პროცენტი
-                                </label>
-
-                                <input type="number" class="form-control" step="1" min="5" max="100" id="daburulobis_procenti">
-                            </div>
-                        </div>
+                        <Maketi19/>
                     </div>
                 </div>
             </div>
@@ -725,110 +435,7 @@
                 </h2>
                 <div id="panel-twenty" class="accordion-collapse collapse" aria-labelledby="twenty">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-1 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="peizazhuri_tipebi">
-                                    21.1. პეიზაჟური ტიპები
-                                </label>
-
-                                <select class="form-select" id="peizazhuri_tipebi">
-                                    <option value="1">11- დახურული ჰორიზონტალური შეკრულობით</option>
-                                    <option value="2">12- დახურული ვერტიკალურული შეკრულობით</option>
-                                    <option value="3">21- ნახევრად ღია თანაბარი გავრცხელების</option>
-                                    <option value="4">22- ნახევრად ღია ჯგუფური გავრცხელების</option>
-                                    <option value="5">31- მეჩხერები</option>
-                                    <option value="6">32- უბნები ერთეული ხეებით</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-md-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="estetikuri_shefaseba">
-                                    21.2. ესთეყიკური შეფასება
-                                </label>
-
-                                <select class="form-select" id="estetikuri_shefaseba">
-                                    <option value="1">1- 1 კლასი</option>
-                                    <option value="2">2- 2 კლასი</option>
-                                    <option value="3">3- 3 კლასი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-md-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="rekreaciuli_shefaseba">
-                                    21.3. რეკრეაციული შეფასება
-                                </label>
-
-                                <select class="form-select" id="rekreaciuli_shefaseba">
-                                    <option value="1">1- მაღალი</option>
-                                    <option value="2">2- საშუალო</option>
-                                    <option value="3">3- დაბალი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="mdgradoba">
-                                    21.4. მდგრადობა
-                                </label>
-
-                                <select class="form-select" id="mdgradoba">
-                                    <option value="1">1- 1 კლასი</option>
-                                    <option value="2">2- 2 კლასი</option>
-                                    <option value="3">3- 3 კლასი</option>
-                                    <option value="3">4- 4 კლასი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="ubnis_gasavloba">
-                                    21.5. უბნის გასავლობა
-                                </label>
-
-                                <select class="form-select" id="ubnis_gasavloba">
-                                    <option value="1">4- კარგი</option>
-                                    <option value="2">3- საშუალო</option>
-                                    <option value="3">2- ცუდი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="ubnis_atvaliereba">
-                                    21.6. უბნის ათვალიერება
-                                </label>
-
-                                <select class="form-select" id="ubnis_atvaliereba">
-                                    <option value="1">4- კარგი</option>
-                                    <option value="2">3- საშუალო</option>
-                                    <option value="3">2- ცუდი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="degradaciis_stadia">
-                                    21.7. დეგრადაციის სტადია
-                                </label>
-
-                                <select class="form-select" id="degradaciis_stadia">
-                                    <option value="1">1- 1 სტადია</option>
-                                    <option value="2">2- 2 სტადია</option>
-                                    <option value="3">3- 3 სტადია</option>
-                                    <option value="4">4- 4 სტადია</option>
-                                    <option value="5">5- 5 სტადია</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-lg-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="ark_formebi">
-                                    21.8. მცირე არქიტექტორული ფორმები
-                                </label>
-
-                                <select class="form-select" id="ark_formebi">
-                                    <option value="1">100- სტენდური აგიტაცია</option>
-                                    <option value="2">200- დეკორ.სკულპტ</option>
-                                    <option value="3">300- მცირე დროის დასას. ადგილები</option>
-                                    <option value="4">500- კეთილ მოწყობილი ადგილები</option>
-                                </select>
-                            </div>
-                        </div>
+                        <Maketi21/>
                     </div>
                 </div>
             </div>
@@ -856,15 +463,7 @@
                 </h2>
                 <div id="panel-eleven" class="accordion-collapse collapse" aria-labelledby="eleven">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="mb-3">
-                            <label for="additional_information_comments" class="form-label">კომენტარები</label>
-                            <input type="text" class="form-control" id="additional_information_comments">
-                        </div>
-
-                        <div>
-                            <label for="additional_information_other" class="form-label">დამატებითი</label>
-                            <textarea class="form-control" id="additional_information_other" rows="3"></textarea>
-                        </div>
+                        <Maketi23/>
                     </div>
                 </div>
             </div>
@@ -878,88 +477,7 @@
                 </h2>
                 <div id="panel-twentyThree" class="accordion-collapse collapse" aria-labelledby="twentyThree">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-md-2 cols-1 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="niadagis_jgufi">
-                                    24.1. ნიადაგის ჯგუფი
-                                </label>
-
-                                <select class="form-select" id="niadagis_jgufi">
-                                    <option value="0"></option>
-                                    <option value="1">იხ.შიფ.ცხრ.კონკრ.ობიექტ.ადგენს პროექტის ავტორი</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-md-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="niadagis_meqanikuri_shemadgenloba">
-                                    24.2. ნიადაგის მექანიკური შემადგენლობა
-                                </label>
-
-                                <select class="form-select" id="niadagis_meqanikuri_shemadgenloba">
-                                    <option value="0"></option>
-                                    <option value="1">1 - ქვიშნარი</option>
-                                    <option value="2">2 - თიხნარი</option>
-                                    <option value="3">3 - მსუბუქ.თიხნ.</option>
-                                    <option value="4">4 - საშ.თიხნარი</option>
-                                    <option value="5">5 - ძლიერი თიხნ</option>
-                                    <option value="6">6 - თიხა</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="sinestis_xarisxi">
-                                    24.3. სინესტის ხარისხი
-                                </label>
-
-                                <select class="form-select" id="sinestis_xarisxi">
-                                    <option value="0"></option>
-                                    <option value="1">1 - ძლიერ მშრალი</option>
-                                    <option value="2">2 - მშრალი</option>
-                                    <option value="3">3 - გრილი</option>
-                                    <option value="4">4 - ტენიანი</option>
-                                    <option value="5">5 - ჭარბტენიანი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="dakordebis_xarisxi">
-                                    24.4. დაკორდების ხარისხი
-                                </label>
-
-                                <select class="form-select" id="dakordebis_xarisxi">
-                                    <option value="0"></option>
-                                    <option value="1">1 - სუსტი</option>
-                                    <option value="2">2 - საშუალო</option>
-                                    <option value="3">3 - ძლიერი</option>
-                                    <option value="4">4 - დაკორდება არ არის</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="niadagis_simkvrive">
-                                    24.5. ნიადაგის სიმკვრივე
-                                </label>
-
-                                <select class="form-select" id="niadagis_simkvrive">
-                                    <option value="0"></option>
-                                    <option value="1">1 - სუსტი</option>
-                                    <option value="2">2 - საშუალო</option>
-                                    <option value="3">3 - ძლიერი</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-3">
-
-                                <label class="form-label text-truncate w-100" for="dedaqanis_dafarulobis_proc">
-                                    24.6. დედაქანის დაფარულობის % (ეროზირებული და ჩამორეცხილი ნიადაგის აღწერის დროს 5-100%)
-                                </label>
-
-                                <input type="number" class="form-control" step="1" min="5" max="100" id="dedaqanis_dafarulobis_proc">
-                            </div>
-                        </div>
-
+                        <Maketi24/>
                     </div>
                 </div>
             </div>
@@ -973,52 +491,7 @@
                 </h2>
                 <div id="panel-twentyFour" class="accordion-collapse collapse" aria-labelledby="twentyFour">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-md-2 cols-1 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="plantaciis_dasaxeleba">
-                                    25.1. პლანტაციის დასახელება
-                                </label>
-
-                                <select class="form-select" id="plantaciis_dasaxeleba">
-                                    <option value="0">ნუსხას ადგენს პროექტის ავტორი</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-md-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="dargvis_weli">
-                                    25.2. დარგვის წელი (ბოლო ორი ციფრი)
-                                </label>
-
-                                <input type="number" class="form-control" step="1" min="01" max="99" id="dargvis_weli">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="rigebs_shoris_manZili">
-                                    25.3. რიგებს შორის მანძილი (სიზუსტით 0,1-მდე)
-                                </label>
-
-                                <input type="number" class="form-control" step="0.1" min="0.1" max="99.9" id="rigebs_shoris_manZili">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="dashoreba_rigshi">
-                                    25.4. დაშორება რიგში (სიზუსტით 0,1-მდე)
-                                </label>
-
-                                <input type="number" class="form-control" step="0.1" min="0.1" max="99.9" id="dashoreba_rigshi">
-                            </div>
-
-                            <div class="col mt-3">
-                                <label class="form-label text-truncate w-100" for="xeTa_faqtiuri_raodenoba">
-                                    25.5. ხეთა ფაქტიური რაოდენობა 1000ც/ჰა
-                                </label>
-
-                                <input type="number" class="form-control" id="xeTa_faqtiuri_raodenoba">
-                            </div>
-                        </div>
+                        <Maketi25/>
                     </div>
                 </div>
             </div>
@@ -1032,16 +505,7 @@
                 </h2>
                 <div id="panel-twentyFive" class="accordion-collapse collapse" aria-labelledby="twentyFive">
                     <div class="accordion-body p-lg-3 p-0">
-                        <label class="form-label text-truncate w-100" for="seleqciuri_shefasebis_machvenebeli">
-                            26.1. სელექციური შეფასების მაჩვენებლები
-                        </label>
-
-                        <select class="form-select" id="seleqciuri_shefasebis_machvenebeli">
-                            <option value="0"></option>
-                            <option value="1">1 - მინუსური</option>
-                            <option value="2">2 - ნორმალური</option>
-                            <option value="3">3 - პლიუსური</option>
-                        </select>
+                        <Maketi26/>
                     </div>
                 </div>
             </div>
@@ -1055,35 +519,7 @@
                 </h2>
                 <div id="panel-maketi27" class="accordion-collapse collapse" aria-labelledby="other">
                     <div class="accordion-body p-lg-3 p-0">
-                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 m-0">
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="river">მდინარე</label>
-
-                                <select class="form-select" id="river">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <label class="form-label text-truncate w-100" for="well">წყარო</label>
-
-                                <select class="form-select" id="well">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-
-                            <div class="col mt-md-0 mt-3">
-                                <label class="form-label text-truncate w-100" for="river_width">მდინარის სიგანე</label>
-
-                                <input type="number" class="form-control" id="river_width"/>
-                            </div>
-                        </div>
+                        <Maketi27/>
                     </div>
                 </div>
             </div>
@@ -1650,8 +1086,6 @@
                             <option value="5">IV</option>
                             <option value="6">V</option>
                             <option value="7">Vა</option>
-
-
                         </select>
                     </div>
                 </div>
@@ -1794,11 +1228,29 @@ import Maketi11 from "@/components/makets/Maketi-11.vue";
 import Maketi12 from "@/components/makets/Maketi-12.vue";
 import Maketi13 from "@/components/makets/Maketi-13.vue";
 import Maketi14 from "@/components/makets/Maketi-14.vue";
+import Maketi15 from "@/components/makets/Maketi-15.vue";
+import Maketi16 from "@/components/makets/Maketi-16.vue";
+import Maketi19 from "@/components/makets/Maketi-19.vue";
+import Maketi21 from "@/components/makets/Maketi-21.vue";
+import Maketi23 from "@/components/makets/Maketi-23.vue";
+import Maketi24 from "@/components/makets/Maketi-24.vue";
+import Maketi25 from "@/components/makets/Maketi-25.vue";
+import Maketi26 from "@/components/makets/Maketi-26.vue";
+import Maketi27 from "@/components/makets/Maketi-27.vue";
 
 export default {
     name: 'IndexInvAPP',
 
     components: {
+        Maketi27,
+        Maketi26,
+        Maketi25,
+        Maketi24,
+        Maketi23,
+        Maketi21,
+        Maketi19,
+        Maketi16,
+        Maketi15,
         Maketi14,
         Maketi13,
         Maketi12,
