@@ -70,7 +70,7 @@
             <label class="form-label text-truncate w-100" for="forest_type">3.4 ტყის ტიპი</label>
 
             <select class="form-select" id="forest_type">
-                <option selected>ტყის ტიპი </option>
+                <option selected>ტყის ტიპი</option>
                 <option v-for="item in tkisTipi" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
