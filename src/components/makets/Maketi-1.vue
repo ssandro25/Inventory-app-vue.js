@@ -68,18 +68,7 @@
 
             <select class="form-select" id="szd" :disabled="empty_layout_one">
                 <option selected>ს.ზ.დ</option>
-                <option value="1">0-250</option>
-                <option value="2">251-500</option>
-                <option value="3">501-750</option>
-                <option value="4">751-100</option>
-                <option value="5">1001-1250</option>
-                <option value="6">1251-1500</option>
-                <option value="7">1501-1750</option>
-                <option value="8">1751-2000</option>
-                <option value="9">2001-2250</option>
-                <option value="10">2251-2500</option>
-                <option value="11">2501-2750</option>
-                <option value="12">2751-3000</option>
+                <option v-for="item in szd" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
 
@@ -98,7 +87,7 @@
             </label>
 
             <select class="form-select" id="erosion_degree" :disabled="empty_layout_one">
-                <option selected>ეროზიის სახე</option>
+                <option selected>ეროზიის ხარისხი</option>
                 <option v-for="item in eroziisXarisxi" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
@@ -129,7 +118,8 @@ export default {
             'ekspozicia',
             'dakaneba',
             'eroziisSaxe',
-            'eroziisXarisxi'
+            'eroziisXarisxi',
+            'szd'
         ]),
     },
 

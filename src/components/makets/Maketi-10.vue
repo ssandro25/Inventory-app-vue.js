@@ -5,18 +5,7 @@
 
             <select class="form-select" id="tier">
                 <option selected>იარუსი</option>
-                <option>1 - კორომის პირველი იარუსი</option>
-                <option>2 - კორომის მეორე იარუსი</option>
-                <option>3 - ნაბელი კორომი</option>
-                <option>4 - ვარჯშეუკვრელი კულტურები ტყით დაუფარავ მიწებზე</option>
-                <option>5 - ბუნებრივი განახლება ტყის კულტურებში</option>
-                <option>6 - ვარჯშეუკვრელი კულტურები საბურველ ქვეშ</option>
-                <option>7 - ვარჯშეუკვრელი კულტურები კორომის რეკონსტრუქციის შედეგად</option>
-                <option>8 - ბუნებრივი მეჩხერი და დაბალი სიხშირის კორომები </option>
-                <option>9 - ერთეული ხეები</option>
-                <option>10 - ბაღები</option>
-                <option>13 - კორომის დაღუპული ნაწილი</option>
-                <option>15 - ფაუტი კორომში</option>
+                <option v-for="item in iarusi" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
 
@@ -25,16 +14,7 @@
 
             <select class="form-select" id="frequency">
                 <option selected>სიხშირე</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
-                <option>1</option>
+                <option v-for="item in sixshire" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
 
@@ -49,41 +29,7 @@
 
             <select class="form-select" id="type">
                 <option selected>სახეობა #1</option>
-                <option>ნძ</option>
-                <option>სჭ</option>
-                <option>ფჭ</option>
-                <option>წფ</option>
-                <option>წფა</option>
-                <option>რც</option>
-                <option>რცა</option>
-                <option>მხ</option>
-                <option>მხა</option>
-                <option>იფ</option>
-                <option>ნკ</option>
-                <option>ნკა</option>
-                <option>წბ</option>
-                <option>წბა</option>
-                <option>აკ</option>
-                <option>აკა</option>
-                <option>ჯგ</option>
-                <option>ვრხ</option>
-                <option>თლ</option>
-                <option>თხმ</option>
-                <option>თხმა</option>
-                <option>ცხ</option>
-                <option>კკხ</option>
-                <option>პნ</option>
-                <option>მჟლ</option>
-                <option>კრპ</option>
-                <option>ევკ</option>
-                <option>ლილ</option>
-                <option>ალნ</option>
-                <option>არყ</option>
-                <option>მდგ</option>
-                <option>თხ</option>
-                <option>წყ</option>
-                <option>შქრ</option>
-                <option>ბმბმ</option>
+                <option v-for="item in saxeoba" :key="item" :value="item.id">{{ item.fullname_geo }}</option>
             </select>
         </div>
 
@@ -91,10 +37,8 @@
             <label class="form-label text-truncate w-100" for="aw">A წ</label>
 
             <select class="form-select" id="aw">
-                <option selected>5</option>
-                <option>10</option>
-                <option>15</option>
-                <option>20</option>
+                <option selected>ხნოვანება</option>
+                <option v-for="item in xnovaneba" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
 
@@ -102,11 +46,8 @@
             <label class="form-label text-truncate w-100" for="hm">H მ</label>
 
             <select class="form-select" id="hm">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option selected>სიმაღლე</option>
+                <option v-for="item in simagle" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
 
@@ -114,35 +55,35 @@
             <label class="form-label text-truncate w-100" for="dsm">D სმ</label>
 
             <select class="form-select" id="dsm">
-                <option>8</option>
-                <option>10</option>
-                <option>12</option>
-                <option>14</option>
+                <option selected>დიამეტრი</option>
+                <option v-for="item in diametri" :key="item" :value="item.id">{{item.name}}</option>
             </select>
         </div>
 
         <div class="col-lg-2 col-6 mt-3">
-            <label class="form-label text-truncate w-100" for="commodity_class">სასაქონლო
-                კლასი
+            <label class="form-label text-truncate w-100" for="commodity_class">
+                სასაქონლო კლასი
             </label>
 
             <select class="form-select" id="commodity_class">
                 <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
             </select>
         </div>
 
         <div class="col-lg-2 col-6 mt-3">
-            <label class="form-label text-truncate w-100" for="grove_origin">კორომის
-                წარმოშობა</label>
+            <label class="form-label text-truncate w-100" for="grove_origin">
+                კორომის წარმოშობა
+            </label>
 
             <select class="form-select" id="grove_origin">
                 <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">თესლითი</option>
+                <option value="2">ამონაყრითი</option>
+                <option value="3">ხელოვნური</option>
             </select>
         </div>
 
@@ -209,7 +150,13 @@ export default {
 
     computed: {
         ...mapGetters([
-            'dakanebisName'
+            'dakanebisName',
+            'iarusi',
+            'sixshire',
+            'saxeoba',
+            'xnovaneba',
+            'simagle',
+            'diametri'
         ])
     },
 

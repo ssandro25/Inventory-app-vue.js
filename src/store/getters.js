@@ -6,5 +6,16 @@ export default {
    dakaneba: state => state.dakaneba,
    eroziisSaxe: state => state.eroziis_saxe,
    eroziisXarisxi: state => state.eroziis_xarisxi,
-   dakanebisName: state => state.dakanebisName
+   szd: state => state.szd,
+   dakanebisName: state => state.dakanebisName,
+   iarusi: state => state.iarusi,
+   sixshire: state => state.sixshire,
+   saxeoba: state => state.saxeoba,
+   xnovaneba: state => state.xnovaneba,
+   simagle: state => state.simagle,
+   diametri: state => state.diametri,
+   gonisdzieba_1: state => state.gonisdzieba_1,
+   adgilsamyofelisTipi: state => state.adgilsamyofelis_tipi,
+   boniteti: state => state.boniteti,
+   tkisTipi: state => state.tkis_tipi,
 }
