@@ -18,13 +18,13 @@
                 მართვის ორგანო
             </label>
 
-            <select class="form-select" id="martvis_organo">
+            <select v-model="martvisOrganoSelect"  class="form-select" id="martvis_organo">
                 <option value="0">აირჩიე</option>
-                <option v-for="item in martvisOrgano" :key="item" :value="item.id">{{item.name}}</option>
+                <option v-for="item in martvisOrgano" :key="item">{{item.name}}</option>
             </select>
         </div>
 
-        <div class="col mt-lg-0 mt-3">
+        <div v-if="martvisOrganoSelect === '1 - სსიპ ეროვნული სატყეო სააგენტო'" class="col mt-lg-0 mt-3">
             <label class="form-label text-truncate w-100">
                 ადმინისტრაცია
             </label>
@@ -35,7 +35,7 @@
             </select>
         </div>
 
-        <div class="col mt-3">
+        <div v-if="martvisOrganoSelect === '1 - სსიპ ეროვნული სატყეო სააგენტო'" class="col mt-3">
             <label class="form-label text-truncate w-100" for="satkeo_ubani">
                 სატყეო უბანი:
                 <span v-if="administraciaSelect !== 'აირჩიეთ ადმინისტრაცია'" class="fw-bold">{{ administraciaSelect }}</span>
@@ -78,7 +78,7 @@
             </select>
         </div>
 
-        <div class="col mt-3">
+        <div v-if="martvisOrganoSelect === '1 - სსიპ ეროვნული სატყეო სააგენტო'" class="col mt-3">
             <!--  კახეთი -->
             <div v-if="administraciaSelect === '1 - კახეთი'">
                 <label class="form-label text-truncate w-100" for="satkeo">
@@ -312,7 +312,7 @@
             </div>
         </div>
 
-        <div class="col mt-3">
+        <div v-if="martvisOrganoSelect === '1 - სსიპ ეროვნული სატყეო სააგენტო'" class="col mt-3">
             <label class="form-label text-truncate w-100" for="kvartali">
                 კვარტალი
             </label>
@@ -320,7 +320,7 @@
             <input type="number" class="form-control" id="kvartali">
         </div>
 
-        <div class="col mt-3">
+        <div v-if="martvisOrganoSelect === '1 - სსიპ ეროვნული სატყეო სააგენტო'" class="col mt-3">
             <label class="form-label text-truncate w-100" for="sataksacio_ubani_gis">
                 სატაქსაციო უბანი (GIS)
             </label>
@@ -388,6 +388,7 @@ export default {
 
     data() {
         return {
+            martvisOrganoSelect: '',
             administraciaSelect: 'აირჩიეთ ადმინისტრაცია',
             kaxeti: '',
             kvemo_kartli: '',
